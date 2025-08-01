@@ -17,13 +17,13 @@ export const sendEmail = async({email, emailType, userId}:any) => {
         }
 
         var transport = nodemailer.createTransport({
-  host: "sandbox.smtp.mailtrap.io",
-  port: 2525,
-  auth: {
-    user: "dfa97f550bafbc",
-    pass: "a9f61db8af9ff1"
-  }
-});
+            host: "sandbox.smtp.mailtrap.io",
+            port: 2525,
+            auth: {
+                user: "dfa97f550bafbc",
+                pass: "a9f61db8af9ff1"
+            }
+        });
 
 
         const mailOptions = {
